@@ -1,12 +1,12 @@
 from django.test import TestCase, RequestFactory
 from django.db.models.query import QuerySet
-from animais.models import animal
+from animais.models import Animal
 
 
 class indexViewTestCase(TestCase):
 
     def setUp(self):
-        self.animal = animal.objects.create(
+        self.animal = Animal.objects.create(
             nome_animal='Gato',
             predador='Não',
             venenoso='Não',
